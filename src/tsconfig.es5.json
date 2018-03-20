@@ -22,7 +22,7 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "debounce.js",
-    "flatModuleId": "@angular/debounce"
+    "flatModuleId": "ng2-debounce-directive"
   },
   "files": [
     "./index.ts"

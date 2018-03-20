@@ -1,11 +1,13 @@
-# @angular/debounce
+# @ng2-debounce-direcive
+
+Angular 2 directive to add debounce behaviour on elements based in a list of events 
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install @angular/debounce --save
+$ npm install ng2-debounce-directive --save
 ```
 
 ## Consuming your library
@@ -13,7 +15,7 @@ $ npm install @angular/debounce --save
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
-$ npm install @angular/debounce
+$ npm install ng2-debounce-directive
 ```
 
 and then from your Angular `AppModule`:
@@ -22,10 +24,8 @@ and then from your Angular `AppModule`:
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-
 // Import your library
-import { SampleModule } from '@angular/debounce';
+import { Debounce } from 'ng2-debounce-directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from '@angular/debounce';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    Debounce.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -47,11 +47,25 @@ Once your library is imported, you can use its components, directives and pipes 
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+<input appDebounce [delay]="700" [events]="['keyup','mouseover',...]" (func)="some_binding_method()" [(ngModel)]="attribute">
 ```
+
+###Tested events
+
+| Event name  | Description                                                             |
+| ----------- | ----------------------------------------------------------------------- |           
+|onclick      | Fires on a mouse click on the element                                   |
+|ondblclick   | Fires on a mouse double-click on the element                            |
+|onmousedown  | Fires when a mouse button is pressed down on an element                 |         
+|onmousemove  | Fires when the mouse pointer is moving while it is over an element      |           
+|onmouseout   | Fires when the mouse pointer moves out of an element                    |       
+|onmouseover  | Fires when the mouse pointer moves over an element                      |     
+|onmouseup    | Fires when a mouse button is released over an element                   |       
+|onmousewheel | Deprecated. Use the onwheel attribute instead                           |
+|onwheel      | Fires when the mouse wheel rolls up or down over an element             |           
+|onkeydown    | Fires when a user is pressing a key                                     |
+|onkeypress   | Fires when a user presses a key                                         |
+|onkeyup      | Fires when a user releases a key                                        |
 
 ## Development
 

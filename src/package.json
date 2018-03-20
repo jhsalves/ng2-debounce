@@ -1,9 +1,9 @@
 {
-  "name": "@angular/debounce",
+  "name": "ng2-debounce-directive",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhsalves/angular5-debounce"
+    "url": "https://github.com/jhsalves/angular-debounce"
   },
   "author": {
     "name": "Jonathas",
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jhsalves/angular5-debounce/issues"
+    "url": "https://github.com/jhsalves/angular-debounce/issues"
   },
   "main": "debounce.umd.js",
   "module": "debounce.js",
