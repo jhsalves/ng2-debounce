@@ -1,0 +1,28 @@
+{
+  "name": "@angular/debounce",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhsalves/angular5-debounce"
+  },
+  "author": {
+    "name": "Jonathas",
+    "email": "jhsalves@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhsalves/angular5-debounce/issues"
+  },
+  "main": "debounce.umd.js",
+  "module": "debounce.js",
+  "jsnext:main": "debounce.js",
+  "typings": "debounce.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
