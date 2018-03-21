@@ -50,22 +50,21 @@ Once your library is imported, you can use its components, directives and pipes 
 <input appDebounce [delay]="700" [events]="['keyup','mouseover',...]" (func)="some_binding_method()" [(ngModel)]="attribute">
 ```
 
-###Tested events
+### Tested events
 
 | Event name  | Description                                                             |
 | ----------- | ----------------------------------------------------------------------- |           
-|onclick      | Fires on a mouse click on the element                                   |
-|ondblclick   | Fires on a mouse double-click on the element                            |
-|onmousedown  | Fires when a mouse button is pressed down on an element                 |         
-|onmousemove  | Fires when the mouse pointer is moving while it is over an element      |           
-|onmouseout   | Fires when the mouse pointer moves out of an element                    |       
-|onmouseover  | Fires when the mouse pointer moves over an element                      |     
-|onmouseup    | Fires when a mouse button is released over an element                   |       
-|onmousewheel | Deprecated. Use the onwheel attribute instead                           |
-|onwheel      | Fires when the mouse wheel rolls up or down over an element             |           
-|onkeydown    | Fires when a user is pressing a key                                     |
-|onkeypress   | Fires when a user presses a key                                         |
-|onkeyup      | Fires when a user releases a key                                        |
+| click       | Fires on a mouse click on the element                                   |
+| dblclick    | Fires on a mouse double-click on the element                            |
+| mousedown   | Fires when a mouse button is pressed down on an element                 |         
+| mousemove   | Fires when the mouse pointer is moving while it is over an element      |           
+| mouseout    | Fires when the mouse pointer moves out of an element                    |       
+| mouseover   | Fires when the mouse pointer moves over an element                      |     
+| mouseup     | Fires when a mouse button is released over an element                   |       
+| wheel       | Fires when the mouse wheel rolls up or down over an element             |           
+| keydown     | Fires when a user is pressing a key                                     |
+| keypress    | Fires when a user presses a key                                         |
+| keyup       | Fires when a user releases a key                                        |
 
 ## Development
 
